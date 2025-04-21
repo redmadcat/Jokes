@@ -6,30 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9497B3812DB6180300FB8B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9497B3792DB6180300FB8B92 /* Assets.xcassets */; };
+		9497B3832DB6180300FB8B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9497B37B2DB6180300FB8B92 /* LaunchScreen.storyboard */; };
+		9497B3842DB6180300FB8B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9497B37C2DB6180300FB8B92 /* Main.storyboard */; };
+		9497B3852DB6180300FB8B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B3782DB6180300FB8B92 /* AppDelegate.swift */; };
+		9497B3862DB6180300FB8B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B37D2DB6180300FB8B92 /* SceneDelegate.swift */; };
+		9497B3872DB6180300FB8B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B37E2DB6180300FB8B92 /* ViewController.swift */; };
+		9497B38F2DB61F7200FB8B92 /* Roboto-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9497B38D2DB61F7200FB8B92 /* Roboto-Italic-VariableFont_wdth,wght.ttf */; };
+		9497B3902DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9497B38E2DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf */; };
+		9497B3932DB621D100FB8B92 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B3922DB621D100FB8B92 /* UIFont+Extensions.swift */; };
+		9497B3952DB62D5800FB8B92 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B3942DB62D5800FB8B92 /* UIColor+Extensions.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9497B3502DB281FD00FB8B92 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9497B3782DB6180300FB8B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9497B3792DB6180300FB8B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9497B37A2DB6180300FB8B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9497B37D2DB6180300FB8B92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9497B37E2DB6180300FB8B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9497B37F2DB6180300FB8B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9497B3802DB6180300FB8B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9497B38D2DB61F7200FB8B92 /* Roboto-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		9497B38E2DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		9497B3922DB621D100FB8B92 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		9497B3942DB62D5800FB8B92 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9497B3622DB2820300FB8B92 /* Exceptions for "Jokes" folder in "Jokes" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 9497B34F2DB281FD00FB8B92 /* Jokes */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9497B3522DB281FD00FB8B92 /* Jokes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				9497B3622DB2820300FB8B92 /* Exceptions for "Jokes" folder in "Jokes" target */,
-			);
-			path = Jokes;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9497B34D2DB281FD00FB8B92 /* Frameworks */ = {
@@ -45,7 +48,7 @@
 		9497B3472DB281FD00FB8B92 = {
 			isa = PBXGroup;
 			children = (
-				9497B3522DB281FD00FB8B92 /* Jokes */,
+				9497B3882DB61D4000FB8B92 /* Jokes */,
 				9497B3512DB281FD00FB8B92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +59,64 @@
 				9497B3502DB281FD00FB8B92 /* Jokes.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9497B3882DB61D4000FB8B92 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				9497B3912DB6200800FB8B92 /* Extensions */,
+				9497B38A2DB61E3600FB8B92 /* Resources */,
+				9497B3892DB61E2600FB8B92 /* Presentation */,
+				9497B3782DB6180300FB8B92 /* AppDelegate.swift */,
+				9497B37D2DB6180300FB8B92 /* SceneDelegate.swift */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		9497B3892DB61E2600FB8B92 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9497B37E2DB6180300FB8B92 /* ViewController.swift */,
+				9497B37C2DB6180300FB8B92 /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9497B38A2DB61E3600FB8B92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9497B38B2DB61E6100FB8B92 /* Fonts */,
+				9497B3792DB6180300FB8B92 /* Assets.xcassets */,
+				9497B37A2DB6180300FB8B92 /* Info.plist */,
+				9497B37B2DB6180300FB8B92 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9497B38B2DB61E6100FB8B92 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9497B38C2DB61E7400FB8B92 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9497B38C2DB61E7400FB8B92 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				9497B38D2DB61F7200FB8B92 /* Roboto-Italic-VariableFont_wdth,wght.ttf */,
+				9497B38E2DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		9497B3912DB6200800FB8B92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9497B3922DB621D100FB8B92 /* UIFont+Extensions.swift */,
+				9497B3942DB62D5800FB8B92 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +133,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9497B3522DB281FD00FB8B92 /* Jokes */,
 			);
 			name = Jokes;
 			packageProductDependencies = (
@@ -122,6 +180,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9497B3812DB6180300FB8B92 /* Assets.xcassets in Resources */,
+				9497B3832DB6180300FB8B92 /* LaunchScreen.storyboard in Resources */,
+				9497B38F2DB61F7200FB8B92 /* Roboto-Italic-VariableFont_wdth,wght.ttf in Resources */,
+				9497B3902DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf in Resources */,
+				9497B3842DB6180300FB8B92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +195,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9497B3852DB6180300FB8B92 /* AppDelegate.swift in Sources */,
+				9497B3952DB62D5800FB8B92 /* UIColor+Extensions.swift in Sources */,
+				9497B3862DB6180300FB8B92 /* SceneDelegate.swift in Sources */,
+				9497B3932DB621D100FB8B92 /* UIFont+Extensions.swift in Sources */,
+				9497B3872DB6180300FB8B92 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9497B37B2DB6180300FB8B92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9497B37F2DB6180300FB8B92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9497B37C2DB6180300FB8B92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9497B3802DB6180300FB8B92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9497B3642DB2820300FB8B92 /* Debug */ = {
@@ -147,7 +234,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CRL79R2YB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jokes/Info.plist;
+				INFOPLIST_FILE = Jokes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +266,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CRL79R2YB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jokes/Info.plist;
+				INFOPLIST_FILE = Jokes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
