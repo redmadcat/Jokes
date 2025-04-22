@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIFont {
-    static let robotoRegular16 = UIFont(name: "Roboto-Regular", size: 16)
-    static let robotoRegular24 = UIFont(name: "Roboto-Regular", size: 24)
+extension UIFont {    
+    static let robotoMedium16 = UIFont(name: "Roboto-Medium", size: 16)
+    static let robotoMedium24 = UIFont(name: "Roboto-Medium", size: 24)
 }

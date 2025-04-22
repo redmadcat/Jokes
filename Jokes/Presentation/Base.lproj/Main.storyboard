@@ -126,40 +126,45 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xGq-KO-TN8" userLabel="Placeholder Top Stack View">
-                                                <rect key="frame" x="0.0" y="64" width="345" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="4hl-R2-3EL"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zm5-vg-0Nx">
-                                                <rect key="frame" x="0.0" y="112" width="345" height="260"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zm5-vg-0Nx">
+                                                <rect key="frame" x="0.0" y="64" width="345" height="356"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHW-mR-dIY" userLabel="Placeholder Leading Stack View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="260"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="356"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="24" id="tkc-lK-Gpd"/>
+                                                            <constraint firstAttribute="width" id="v2M-9z-ZU8"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken get a penalty?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-oy-oiK">
-                                                        <rect key="frame" x="24" y="0.0" width="297" height="260"/>
-                                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
-                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zVa-LT-zy8">
+                                                        <rect key="frame" x="24" y="0.0" width="277" height="356"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xGq-KO-TN8" userLabel="Placeholder Top Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="277" height="0.0"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" id="fBv-Is-KMr"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken get a penalty?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-oy-oiK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="277" height="324"/>
+                                                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
+                                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SW4-Uj-IC7" userLabel="Placeholder Bottom Stack View">
+                                                                <rect key="frame" x="0.0" y="324" width="277" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="aYc-eH-pMl"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AP-ey-bKq" userLabel="Placeholder Trailing Stack View">
-                                                        <rect key="frame" x="321" y="0.0" width="24" height="260"/>
+                                                        <rect key="frame" x="325" y="0.0" width="20" height="356"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="24" id="eM2-2o-Bg2"/>
+                                                            <constraint firstAttribute="width" constant="20" id="mvX-wP-xZx"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SW4-Uj-IC7">
-                                                <rect key="frame" x="0.0" y="372" width="345" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="NGt-U5-v4W"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="JK Pink"/>
@@ -217,6 +222,9 @@
                                                         <integer key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="showPunchline:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJv-Na-E0J"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -235,6 +243,18 @@
                             <constraint firstItem="Hrh-LM-EeC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="rSB-lf-1bs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jokeBodyLabel" destination="VYB-oy-oiK" id="L23-kY-Xwg"/>
+                        <outlet property="jokeIdLabel" destination="WGE-J7-d6b" id="J7b-cg-92z"/>
+                        <outlet property="jokeTypeLabel" destination="J65-Sn-dCR" id="8Aa-my-7dw"/>
+                        <outlet property="jokeTypeNameLabel" destination="wJJ-Vv-hXW" id="vM4-Fq-1Qv"/>
+                        <outlet property="jokeValueLabel" destination="jgy-SR-QWj" id="1lZ-TA-Ge1"/>
+                        <outlet property="placeholderBottom" destination="SW4-Uj-IC7" id="uM1-xQ-OoV"/>
+                        <outlet property="placeholderTop" destination="xGq-KO-TN8" id="IYq-0B-G8J"/>
+                        <outlet property="refreshButton" destination="nBK-jx-APz" id="u6X-El-nip"/>
+                        <outlet property="setupLabel" destination="AOy-40-p4D" id="7kZ-G7-kY7"/>
+                        <outlet property="showPunchlineButton" destination="h57-jL-FOn" id="d7z-Ce-AKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

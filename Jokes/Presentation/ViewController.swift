@@ -7,13 +7,52 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    // MARK: - @IBOutlet
+    @IBOutlet private weak var jokeIdLabel: UILabel!
+    @IBOutlet private weak var jokeValueLabel: UILabel!
+    @IBOutlet private weak var jokeTypeLabel: UILabel!
+    @IBOutlet private weak var jokeTypeNameLabel: UILabel!
+    
+    @IBOutlet private weak var setupLabel: UILabel!
+    @IBOutlet private weak var jokeBodyLabel: UILabel!
+    
+    @IBOutlet private weak var refreshButton: UIButton!
+    @IBOutlet private weak var showPunchlineButton: UIButton!
+    
+    @IBOutlet private weak var placeholderTop: UIStackView!
+    @IBOutlet private weak var placeholderBottom: UIStackView!
+        
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureUI()
     }
-
-
+    
+    private func configureUI() {
+        jokeIdLabel.font = .robotoMedium16
+        jokeValueLabel.font = .robotoMedium16
+        jokeTypeLabel.font = .robotoMedium16
+        jokeTypeNameLabel.font = .robotoMedium16
+        setupLabel.font = .robotoMedium16
+        showPunchlineButton.titleLabel?.font = .robotoMedium16
+        jokeBodyLabel.font = .robotoMedium24
+                        
+        placeholderTop.addBorderTop(size: 2, color: .jkBlackColor)
+        placeholderBottom.addBorderTop(size: 2, color: .jkBlackColor)
+    }
+    
+    // MARK: - @IBAction
+    @IBAction private func showPunchline(_ sender: Any) {
+        let alert = UIAlertController(
+            title: "Punchline",
+            message: "For fowl play",
+            preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Ok", style: .default)
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
