@@ -56,3 +56,20 @@ final class ViewController: UIViewController {
     }
 }
 
+#if DEBUG
+import SwiftUI
+
+@available(iOS 13, *)
+struct ViewControllerPreview: PreviewProvider {
+    static var devices = ["iPnone SE", "iPhone 11 Pro Max"]
+    
+    static var previews: some View {
+        ForEach(devices, id: \.self) { deviceName in
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController").toPreview()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}
+#endif
+
