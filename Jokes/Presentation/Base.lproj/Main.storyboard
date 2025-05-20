@@ -128,7 +128,7 @@
                                                             <fragment content="Setup">
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="16" name=".SFNS-Regular"/>
+                                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
@@ -212,6 +212,9 @@
                                                         <integer key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8f-WM-7RE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h57-jL-FOn">
                                                 <rect key="frame" x="88" y="0.0" width="257" height="64"/>
@@ -240,6 +243,9 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="IEC-yL-dcj" userLabel="Activity Indicator">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="JK Background"/>
@@ -247,10 +253,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hrh-LM-EeC" secondAttribute="bottom" constant="48" id="8Vz-ax-hTC"/>
                             <constraint firstItem="Hrh-LM-EeC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="TTT-O6-L2A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hrh-LM-EeC" secondAttribute="trailing" constant="24" id="UWC-G7-BhX"/>
+                            <constraint firstItem="IEC-yL-dcj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZR0-tA-Xw6"/>
                             <constraint firstItem="Hrh-LM-EeC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="rSB-lf-1bs"/>
+                            <constraint firstItem="IEC-yL-dcj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="st5-Vj-hfz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="IEC-yL-dcj" id="gEa-N4-vET"/>
                         <outlet property="jokeBodyLabel" destination="VYB-oy-oiK" id="L23-kY-Xwg"/>
                         <outlet property="jokeIdLabel" destination="WGE-J7-d6b" id="J7b-cg-92z"/>
                         <outlet property="jokeTypeLabel" destination="J65-Sn-dCR" id="8Aa-my-7dw"/>
