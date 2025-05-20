@@ -9,18 +9,15 @@ import UIKit
 
 final class ViewController: UIViewController, JokesFactoryDelegate {
     // MARK: - @IBOutlet
-    @IBOutlet private weak var jokeIdLabel: UILabel!
-    @IBOutlet private weak var jokeValueLabel: UILabel!
-    @IBOutlet private weak var jokeTypeLabel: UILabel!
-    @IBOutlet private weak var jokeTypeNameLabel: UILabel!
-    
-    @IBOutlet private weak var setupLabel: UILabel!
-    @IBOutlet private weak var jokeBodyLabel: UILabel!
-    
+    @IBOutlet private weak var jokeIdTitleLabel: UILabel!
+    @IBOutlet private weak var jokeIdValueLabel: UILabel!
+    @IBOutlet private weak var jokeTypeTitleLabel: UILabel!
+    @IBOutlet private weak var jokeTypeValueLabel: UILabel!
+    @IBOutlet private weak var jokeSetupTitleLabel: UILabel!
+    @IBOutlet private weak var jokeSetupValueLabel: UILabel!
     @IBOutlet private weak var refreshButton: UIButton!
     @IBOutlet private weak var showPunchlineButton: UIButton!
-        
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - Definition
     private var jokesFactory: JokesFactoryProtocol?
@@ -35,13 +32,13 @@ final class ViewController: UIViewController, JokesFactoryDelegate {
     }
     
     private func configureUI() {
-        jokeIdLabel.font = .robotoMedium16
-        jokeValueLabel.font = .robotoMedium16
-        jokeTypeLabel.font = .robotoMedium16
-        jokeTypeNameLabel.font = .robotoMedium16
-        setupLabel.font = .robotoMedium16
+        jokeIdTitleLabel.font = .robotoMedium16
+        jokeIdValueLabel.font = .robotoMedium16
+        jokeTypeTitleLabel.font = .robotoMedium16
+        jokeTypeValueLabel.font = .robotoMedium16
+        jokeSetupTitleLabel.font = .robotoMedium16
         showPunchlineButton.titleLabel?.font = .robotoMedium16
-        jokeBodyLabel.font = .robotoMedium24
+        jokeSetupValueLabel.font = .robotoMedium24
     }
     
     private func configureServices() {
@@ -78,9 +75,9 @@ final class ViewController: UIViewController, JokesFactoryDelegate {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
             
-            self.jokeValueLabel.text = String(joke.id)
-            self.jokeTypeNameLabel.text = joke.type
-            self.jokeBodyLabel.text = joke.setup
+            self.jokeIdValueLabel.text = String(joke.id)
+            self.jokeTypeValueLabel.text = joke.type
+            self.jokeSetupValueLabel.text = joke.setup
         }
     }
         
