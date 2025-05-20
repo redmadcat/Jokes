@@ -18,6 +18,12 @@
 		9497B3902DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9497B38E2DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf */; };
 		9497B3932DB621D100FB8B92 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B3922DB621D100FB8B92 /* UIFont+Extensions.swift */; };
 		9497B3952DB62D5800FB8B92 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497B3942DB62D5800FB8B92 /* UIColor+Extensions.swift */; };
+		949CCA2F2DDC688B00633A19 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA2E2DDC688B00633A19 /* NetworkClient.swift */; };
+		949CCA312DDC690600633A19 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA302DDC690600633A19 /* Joke.swift */; };
+		949CCA332DDC69FD00633A19 /* JokesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA322DDC69F700633A19 /* JokesLoader.swift */; };
+		949CCA352DDC6B9D00633A19 /* JokesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA342DDC6B9D00633A19 /* JokesFactory.swift */; };
+		949CCA372DDC6BCB00633A19 /* JokesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA362DDC6BCB00633A19 /* JokesFactoryProtocol.swift */; };
+		949CCA392DDC6C7300633A19 /* JokesFactoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CCA382DDC6C6B00633A19 /* JokesFactoryDelegate.swift */; };
 		94CB57622DB905A50018EA3D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB57612DB905A50018EA3D /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +41,12 @@
 		9497B38E2DB61F7200FB8B92 /* Roboto-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		9497B3922DB621D100FB8B92 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		9497B3942DB62D5800FB8B92 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		949CCA2E2DDC688B00633A19 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		949CCA302DDC690600633A19 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		949CCA322DDC69F700633A19 /* JokesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesLoader.swift; sourceTree = "<group>"; };
+		949CCA342DDC6B9D00633A19 /* JokesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesFactory.swift; sourceTree = "<group>"; };
+		949CCA362DDC6BCB00633A19 /* JokesFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesFactoryProtocol.swift; sourceTree = "<group>"; };
+		949CCA382DDC6C6B00633A19 /* JokesFactoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesFactoryDelegate.swift; sourceTree = "<group>"; };
 		94CB57612DB905A50018EA3D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +80,8 @@
 		9497B3882DB61D4000FB8B92 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				949CCA2D2DDC67E100633A19 /* Models */,
+				949CCA2C2DDC67C000633A19 /* Services */,
 				9497B3912DB6200800FB8B92 /* Extensions */,
 				9497B38A2DB61E3600FB8B92 /* Resources */,
 				9497B3892DB61E2600FB8B92 /* Presentation */,
@@ -123,6 +137,26 @@
 				94CB57612DB905A50018EA3D /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		949CCA2C2DDC67C000633A19 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				949CCA382DDC6C6B00633A19 /* JokesFactoryDelegate.swift */,
+				949CCA322DDC69F700633A19 /* JokesLoader.swift */,
+				949CCA2E2DDC688B00633A19 /* NetworkClient.swift */,
+				949CCA342DDC6B9D00633A19 /* JokesFactory.swift */,
+				949CCA362DDC6BCB00633A19 /* JokesFactoryProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		949CCA2D2DDC67E100633A19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				949CCA302DDC690600633A19 /* Joke.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,12 +236,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				948E75202DB75D5A00C243EC /* UIView+Extensions.swift in Sources */,
+				949CCA332DDC69FD00633A19 /* JokesLoader.swift in Sources */,
 				9497B3852DB6180300FB8B92 /* AppDelegate.swift in Sources */,
 				9497B3952DB62D5800FB8B92 /* UIColor+Extensions.swift in Sources */,
+				949CCA352DDC6B9D00633A19 /* JokesFactory.swift in Sources */,
 				94CB57622DB905A50018EA3D /* UIViewController+Extensions.swift in Sources */,
 				9497B3862DB6180300FB8B92 /* SceneDelegate.swift in Sources */,
+				949CCA312DDC690600633A19 /* Joke.swift in Sources */,
 				9497B3932DB621D100FB8B92 /* UIFont+Extensions.swift in Sources */,
 				9497B3872DB6180300FB8B92 /* ViewController.swift in Sources */,
+				949CCA2F2DDC688B00633A19 /* NetworkClient.swift in Sources */,
+				949CCA392DDC6C7300633A19 /* JokesFactoryDelegate.swift in Sources */,
+				949CCA372DDC6BCB00633A19 /* JokesFactoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
