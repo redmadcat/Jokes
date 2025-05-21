@@ -9,27 +9,31 @@ import Foundation
 import UIKit
 
 extension UIView {
-    
-    func addBorderTop(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
+    enum Side {
+        case top
+        case left
+        case bottom
+        case right
     }
-    
-    func addBorderBottom(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: frame.height - size, width: frame.width, height: size, color: color)
-    }
-    
-    func addBorderLeft(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: 0, width: size, height: frame.height, color: color)
-    }
-    
-    func addBorderRight(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: frame.width - size, y: 0, width: size, height: frame.height, color: color)
-    }
-    
-    private func addBorderUtility(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: x, y: y, width: width, height: height)
-        layer.addSublayer(border)
+            
+    func addBorder(to: Side, width borderWidth: CGFloat, color: UIColor?) {
+        let border = UIView()
+        border.backgroundColor = color
+        
+        switch to {
+        case .top:
+            border.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: borderWidth)
+            border.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+        case .left:
+            border.frame = CGRect(x: 0, y: 0, width: borderWidth, height: frame.size.height)
+            border.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
+        case .bottom:
+            border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+            border.frame = CGRect(x: 0, y: frame.size.height - borderWidth, width: frame.size.width, height: borderWidth)
+        case .right:
+            border.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
+            border.frame = CGRect(x: frame.size.width - borderWidth, y: 0, width: borderWidth, height: frame.size.height)
+        }
+        addSubview(border)
     }
 }
