@@ -155,26 +155,15 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbc-tm-bqa">
-                                                        <rect key="frame" x="0.0" y="61" width="297" height="2"/>
-                                                        <color key="backgroundColor" name="JK Black"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="4zb-Ao-0RB"/>
-                                                        </constraints>
-                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for the joke :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-oy-oiK" userLabel="Joke Setup Value Label">
-                                                        <rect key="frame" x="0.0" y="63" width="297" height="155"/>
+                                                        <rect key="frame" x="0.0" y="61" width="297" height="159"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="155" id="haO-0n-Oir"/>
+                                                            <constraint firstAttribute="height" constant="159" id="haO-0n-Oir"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rH-IB-xfP">
-                                                        <rect key="frame" x="0.0" y="218" width="297" height="2"/>
-                                                        <color key="backgroundColor" name="JK Black"/>
-                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-Kh-acu">
                                                         <rect key="frame" x="0.0" y="220" width="297" height="24"/>
                                                         <constraints>
@@ -185,9 +174,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="6rH-IB-xfP" firstAttribute="height" secondItem="zbc-tm-bqa" secondAttribute="height" id="O0l-tP-a5M"/>
-                                                </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gB0-OY-w3C">
                                                 <rect key="frame" x="321" y="0.0" width="24" height="244"/>

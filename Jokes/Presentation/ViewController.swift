@@ -39,6 +39,8 @@ final class ViewController: UIViewController, JokesFactoryDelegate {
         jokeSetupTitleLabel.font = .robotoMedium16
         showPunchlineButton.titleLabel?.font = .robotoMedium16
         jokeSetupValueLabel.font = .robotoMedium24
+        jokeSetupValueLabel.addBorder(to: .top, width: 2.0, color: .jkBlackColor)
+        jokeSetupValueLabel.addBorder(to: .bottom, width: 2.0, color: .jkBlackColor)
     }
     
     private func configureServices() {
